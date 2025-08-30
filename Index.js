@@ -4,7 +4,7 @@ const app = express();
 const port = process.env.PORT || 10000;
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "public"))); // sert ton index.html
+app.use(express.static(path.join(__dirname, "public"))); // Sert ton index.html
 
 // Endpoint POST pour démarrer Aternos
 app.post("/start", (req, res) => {
