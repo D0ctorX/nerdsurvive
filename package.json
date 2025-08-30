@@ -1,11 +1,15 @@
 {
-  "name": "start-aternos",
+  "name": "nerdsurvive",
   "version": "1.0.0",
+  "description": "Backend pour le site NerdSurvive et démarrage serveur Aternos",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
+  "author": "D0ctorX",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "path": "^0.12.7"
   }
 }
