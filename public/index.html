@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Allumer le serveur Aternos</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+    button { padding: 15px 30px; font-size: 18px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Allumer le serveur Aternos</h1>
+  <button id="startBtn">Démarrer le serveur</button>
+
+  <script>
+    const btn = document.getElementById("startBtn");
+
+    btn.addEventListener("click", () => {
+      btn.disabled = true;
+      btn.textContent = "Démarrage en cours...";
+      
+      // Ici on fera la requête vers le backend Firebase
+      alert("Cette fonction sera reliée au serveur plus tard !");
+      
+      btn.disabled = false;
+      btn.textContent = "Démarrer le serveur";
+    });
+  </script>
+</body>
+</html>
